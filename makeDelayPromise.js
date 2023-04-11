@@ -11,3 +11,20 @@ function makeDelayPromise(value, delayInMs){
 }
 
 console.log(makeDelayPromise('test', 1000));
+
+
+
+
+
+
+function makeDelayPromise(value, delayInMs) {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve(value);
+      }, delayInMs);
+    });
+  }
+  makeDelayPromise('test', 1000)
+    .then(value => {
+      console.log(value); // Output: 'test'
+    });
