@@ -10,3 +10,11 @@ function makePromiseResolveWith(value){
 }
 
 console.log(makePromiseResolveWith(5));
+
+
+
+function makePromiseResolveWith(value) {
+    return Promise.resolve(value);
+  }
+ 
+  console.log(makePromiseResolveWith(5));
